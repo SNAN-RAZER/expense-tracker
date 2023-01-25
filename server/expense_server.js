@@ -16,6 +16,14 @@ app.use(cors({
 app.get('/', (req, res) => res.send('Hello World!'))
 app.use('/api/v1/users',userRouter);
 app.use('/api/v1/users/transactions',transactionRouter);
+
+if(process.env.NODE_ENV === "production")
+{
+    app.use('/',express.static('client/build'));
+    app.get("*",(req,res)=>{
+        res.sendFile(path.resolve(__dirname,'client/build/index.html'));
+    })
+}
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.connection.once("open",()=>{
     console.log("mongodb connected");
