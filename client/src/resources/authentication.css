@@ -1,0 +1,74 @@
+.register-form,.login-form
+{
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+
+}
+.reg-title,.login-title{
+    color: white !important;
+    text-align: center;
+    padding: 15px;
+    text-transform: capitalize;
+    
+}
+.register,.login
+{
+  
+  width: 100%;
+  display: flex;
+  justify-content: center   !important;
+  align-items: center !important;  
+  height:100vh;
+
+}
+.lottie{
+    height: 400px;
+}
+
+.register input,.login input{
+    color: rgba(255, 255, 255, 0.589) !important;
+    background-color: transparent   !important;
+    border: none;
+    border-bottom: 1px solid rgba(137,137,137,0.696);
+   
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+label{
+    color: rgba(255, 255, 255, 0.589) !important;
+}
+.register{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
+.lottie{
+    height:400px;
+}
+
+.register input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.784);
+    color: rgba(255, 255, 255, 0.568);
+}
+
+input:focus{
+   outline: none !important;
+   box-shadow: none !important;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.784) !important;
+}
+
+label , a{
+    color: rgba(255, 255, 255, 0.536) !important;
+}
+
+.register h1{
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+}
